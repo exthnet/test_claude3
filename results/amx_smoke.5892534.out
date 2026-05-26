@@ -1,0 +1,33 @@
+==== CPU info ====
+NUMA ノード数:                       8
+CPU MHz:                             1900.000
+CPU 最大 MHz:                        3500.0000
+CPU 最小 MHz:                        800.0000
+NUMA ノード 0 CPU:                   0-14
+NUMA ノード 1 CPU:                   15-29
+NUMA ノード 2 CPU:                   30-44
+NUMA ノード 3 CPU:                   45-59
+NUMA ノード 4 CPU:                   60-74
+NUMA ノード 5 CPU:                   75-89
+==== AMX flags ====
+amx_bf16
+amx_int8
+amx_tile
+==== Smoke test: N=2048 with numactl single NUMA ====
+mkl    M= 2048 N= 2048 K= 2048                best=0.0189s mean=0.0191s  GF_best=909.76 GF_mean=899.84
+v1     M= 2048 N= 2048 K= 2048                best=0.0334s mean=0.0345s  GF_best=514.82 GF_mean=498.56
+v2     M= 2048 N= 2048 K= 2048  kb=1024 nb= 256  best=0.0339s mean=0.0348s  GF_best=506.70 GF_mean=493.40
+v3     M= 2048 N= 2048 K= 2048  kb=1024 nb= 256  best=0.0199s mean=0.0211s  GF_best=862.73 GF_mean=813.91
+v4     M= 2048 N= 2048 K= 2048  kb=1024 nb= 256  best=0.0251s mean=0.0263s  GF_best=685.04 GF_mean=654.12
+v5     M= 2048 N= 2048 K= 2048  kb=1536 nb= 480  best=0.0411s mean=0.0430s  GF_best=417.88 GF_mean=399.31
+==== Smoke test: N=4096 ====
+mkl    M= 4096 N= 4096 K= 4096                best=0.1528s mean=0.1529s  GF_best=899.67 GF_mean=898.64
+v3     M= 4096 N= 4096 K= 4096  kb=1024 nb= 256  best=0.1614s mean=0.1625s  GF_best=851.48 GF_mean=845.72
+v4     M= 4096 N= 4096 K= 4096  kb=1024 nb= 256  best=0.2044s mean=0.2048s  GF_best=672.52 GF_mean=671.12
+v5     M= 4096 N= 4096 K= 4096  kb=1536 nb= 480  best=0.2114s mean=0.2123s  GF_best=650.15 GF_mean=647.46
+==== Smoke test: N=8192 ====
+mkl    M= 8192 N= 8192 K= 8192                best=1.4960s mean=1.4992s  GF_best=734.99 GF_mean=733.41
+v3     M= 8192 N= 8192 K= 8192  kb=1024 nb= 256  best=1.4445s mean=1.4484s  GF_best=761.19 GF_mean=759.14
+v4     M= 8192 N= 8192 K= 8192  kb=1024 nb= 256  best=1.7541s mean=1.7578s  GF_best=626.84 GF_mean=625.51
+v5     M= 8192 N= 8192 K= 8192  kb=1536 nb= 480  best=1.5395s mean=1.5408s  GF_best=714.18 GF_mean=713.60
+DONE

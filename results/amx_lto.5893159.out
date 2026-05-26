@@ -1,0 +1,14 @@
+===== LTO build comparison =====
+mkl    M= 8192 N= 8192 K= 8192                best=1.5254s mean=1.5277s  GF_best=720.82 GF_mean=719.71
+v9     M= 8192 N= 8192 K= 8192  kb=1280 nb= 528  best=1.1435s mean=1.1491s  GF_best=961.56 GF_mean=956.80
+v12    M= 8192 N= 8192 K= 8192  kb=1024 nb= 640  best=1.1325s mean=1.1375s  GF_best=970.85 GF_mean=966.63
+mkl    M=10000 N=10000 K=10000                best=1.8812s mean=1.8815s  GF_best=1063.17 GF_mean=1062.98
+v9     M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.8032s mean=1.8265s  GF_best=1109.17 GF_mean=1094.97
+v12    M=10000 N=10000 K=10000  kb=1024 nb= 640  best=1.9665s mean=1.9940s  GF_best=1017.05 GF_mean=1003.02
+mkl    M=12000 N=12000 K=12000                best=3.1076s mean=3.1080s  GF_best=1112.11 GF_mean=1111.97
+v9     M=12000 N=12000 K=12000  kb=1280 nb= 528  best=3.1198s mean=3.1713s  GF_best=1107.78 GF_mean=1089.76
+v12    M=12000 N=12000 K=12000  kb=1024 nb= 640  best=3.2012s mean=3.4067s  GF_best=1079.58 GF_mean=1014.47
+mkl    M=16384 N=16384 K=16384                best=11.8131s mean=11.8193s  GF_best=744.61 GF_mean=744.21
+v9     M=16384 N=16384 K=16384  kb=1280 nb= 528  best=8.8723s mean=9.3183s  GF_best=991.41 GF_mean=943.96
+v12    M=16384 N=16384 K=16384  kb=1024 nb= 640  best=8.7970s mean=9.0212s  GF_best=999.90 GF_mean=975.04
+===== Reproducibility v9 + LTO @ N=10000 =====

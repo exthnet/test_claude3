@@ -1,0 +1,5 @@
+===== v10 (M-panel) sweep @ N=10000, k=1280 n=528 =====
+v10    M=10000 N=10000 K=10000  kb=1280 nb= 528  best=11.7602s mean=11.8080s  GF_best=170.07 GF_mean=169.38
+v10    M=10000 N=10000 K=10000  kb=1280 nb= 528  best=8.8599s mean=8.8782s  GF_best=225.74 GF_mean=225.27
+v10    M=10000 N=10000 K=10000  kb=1280 nb= 528  best=7.4471s mean=7.4699s  GF_best=268.56 GF_mean=267.74
+v10    M=10000 N=10000 K=10000  kb=1280 nb= 528  best=6.5559s mean=6.5729s  GF_best=305.07 GF_mean=304.28

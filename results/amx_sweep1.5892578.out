@@ -1,0 +1,49 @@
+=== Baseline @ 4096 ===
+mkl    M= 4096 N= 4096 K= 4096                best=0.1536s mean=0.1537s  GF_best=894.70 GF_mean=893.96
+v3     M= 4096 N= 4096 K= 4096  kb=1024 nb= 256  best=0.1617s mean=0.1625s  GF_best=849.87 GF_mean=845.76
+v4     M= 4096 N= 4096 K= 4096  kb=1024 nb= 256  best=0.1647s mean=0.1662s  GF_best=834.58 GF_mean=826.98
+v5     M= 4096 N= 4096 K= 4096  kb=1536 nb= 480  best=0.1775s mean=0.1782s  GF_best=774.27 GF_mean=771.13
+v6     M= 4096 N= 4096 K= 4096  kb=1536 nb= 480  best=0.1848s mean=0.1854s  GF_best=743.63 GF_mean=741.39
+=== Baseline @ 8192 ===
+mkl    M= 8192 N= 8192 K= 8192                best=1.5313s mean=1.5326s  GF_best=718.02 GF_mean=717.43
+v3     M= 8192 N= 8192 K= 8192  kb=1024 nb= 256  best=1.4858s mean=1.4891s  GF_best=740.04 GF_mean=738.37
+v4     M= 8192 N= 8192 K= 8192  kb=1024 nb= 256  best=1.5245s mean=1.5265s  GF_best=721.21 GF_mean=720.29
+v5     M= 8192 N= 8192 K= 8192  kb=1536 nb= 480  best=1.3048s mean=1.3150s  GF_best=842.67 GF_mean=836.11
+v6     M= 8192 N= 8192 K= 8192  kb=1536 nb= 480  best=1.3732s mean=1.3760s  GF_best=800.72 GF_mean=799.07
+=== v3 (Base-kernel) block sweep @ 4096 ===
+v3     M= 4096 N= 4096 K= 4096  kb=1024 nb= 256  best=0.1620s mean=0.1629s  GF_best=848.36 GF_mean=843.70
+v3     M= 4096 N= 4096 K= 4096  kb=1024 nb= 288  best=0.1769s mean=0.1775s  GF_best=777.01 GF_mean=774.29
+v3     M= 4096 N= 4096 K= 4096  kb=1024 nb= 480  best=0.1698s mean=0.1700s  GF_best=809.22 GF_mean=808.23
+v3     M= 4096 N= 4096 K= 4096  kb=1024 nb= 512  best=0.1554s mean=0.1561s  GF_best=884.69 GF_mean=880.53
+v3     M= 4096 N= 4096 K= 4096  kb=1024 nb= 576  best=0.1784s mean=0.1790s  GF_best=770.34 GF_mean=767.92
+v3     M= 4096 N= 4096 K= 4096  kb=1536 nb= 256  best=0.1693s mean=0.1701s  GF_best=811.76 GF_mean=808.00
+v3     M= 4096 N= 4096 K= 4096  kb=1536 nb= 288  best=0.1882s mean=0.1887s  GF_best=730.22 GF_mean=728.41
+v3     M= 4096 N= 4096 K= 4096  kb=1536 nb= 480  best=0.1806s mean=0.1811s  GF_best=760.97 GF_mean=758.77
+v3     M= 4096 N= 4096 K= 4096  kb=1536 nb= 512  best=0.1718s mean=0.1724s  GF_best=799.87 GF_mean=797.44
+v3     M= 4096 N= 4096 K= 4096  kb=1536 nb= 576  best=0.2040s mean=0.2054s  GF_best=673.65 GF_mean=669.25
+v3     M= 4096 N= 4096 K= 4096  kb=2048 nb= 256  best=0.1584s mean=0.1596s  GF_best=867.49 GF_mean=861.36
+v3     M= 4096 N= 4096 K= 4096  kb=2048 nb= 288  best=0.1733s mean=0.1739s  GF_best=793.01 GF_mean=790.54
+v3     M= 4096 N= 4096 K= 4096  kb=2048 nb= 480  best=0.2417s mean=0.2453s  GF_best=568.58 GF_mean=560.39
+v3     M= 4096 N= 4096 K= 4096  kb=2048 nb= 512  best=0.2293s mean=0.2320s  GF_best=599.43 GF_mean=592.49
+v3     M= 4096 N= 4096 K= 4096  kb=2048 nb= 576  best=0.2992s mean=0.3007s  GF_best=459.31 GF_mean=457.04
+=== v5 (Tiling_B no pf) block sweep @ 4096 ===
+v5     M= 4096 N= 4096 K= 4096  kb=1024 nb= 288  best=0.1726s mean=0.1734s  GF_best=796.22 GF_mean=792.72
+v5     M= 4096 N= 4096 K= 4096  kb=1024 nb= 480  best=0.1661s mean=0.1670s  GF_best=827.46 GF_mean=822.84
+v5     M= 4096 N= 4096 K= 4096  kb=1024 nb= 576  best=0.1765s mean=0.1772s  GF_best=778.84 GF_mean=775.74
+v5     M= 4096 N= 4096 K= 4096  kb=1536 nb= 288  best=0.1817s mean=0.1822s  GF_best=756.34 GF_mean=754.46
+v5     M= 4096 N= 4096 K= 4096  kb=1536 nb= 480  best=0.1774s mean=0.1777s  GF_best=774.54 GF_mean=773.60
+v5     M= 4096 N= 4096 K= 4096  kb=1536 nb= 576  best=0.2006s mean=0.2016s  GF_best=685.20 GF_mean=681.85
+v5     M= 4096 N= 4096 K= 4096  kb=2048 nb= 288  best=0.1735s mean=0.1744s  GF_best=792.09 GF_mean=788.25
+v5     M= 4096 N= 4096 K= 4096  kb=2048 nb= 480  best=0.2246s mean=0.2267s  GF_best=611.94 GF_mean=606.30
+v5     M= 4096 N= 4096 K= 4096  kb=2048 nb= 576  best=0.2807s mean=0.2821s  GF_best=489.56 GF_mean=487.15
+=== v6 (Tiling_B + light pf) block sweep @ 4096 ===
+v6     M= 4096 N= 4096 K= 4096  kb=1024 nb= 288  best=0.1803s mean=0.1806s  GF_best=762.46 GF_mean=760.93
+v6     M= 4096 N= 4096 K= 4096  kb=1024 nb= 480  best=0.1729s mean=0.1733s  GF_best=794.86 GF_mean=793.24
+v6     M= 4096 N= 4096 K= 4096  kb=1024 nb= 576  best=0.1825s mean=0.1827s  GF_best=753.13 GF_mean=752.24
+v6     M= 4096 N= 4096 K= 4096  kb=1536 nb= 288  best=0.1929s mean=0.1933s  GF_best=712.46 GF_mean=710.84
+v6     M= 4096 N= 4096 K= 4096  kb=1536 nb= 480  best=0.1856s mean=0.1859s  GF_best=740.50 GF_mean=739.13
+v6     M= 4096 N= 4096 K= 4096  kb=1536 nb= 576  best=0.2101s mean=0.2107s  GF_best=654.23 GF_mean=652.21
+v6     M= 4096 N= 4096 K= 4096  kb=2048 nb= 288  best=0.1728s mean=0.1732s  GF_best=795.18 GF_mean=793.74
+v6     M= 4096 N= 4096 K= 4096  kb=2048 nb= 480  best=0.2331s mean=0.2341s  GF_best=589.67 GF_mean=587.15
+v6     M= 4096 N= 4096 K= 4096  kb=2048 nb= 576  best=0.2839s mean=0.2858s  GF_best=484.06 GF_mean=480.89
+DONE

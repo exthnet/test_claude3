@@ -1,0 +1,22 @@
+===== Multi-run high-iter confirmation =====
+--- pass 1 ---
+mkl    M= 8192 N= 8192 K= 8192                best=1.4995s mean=1.5032s  GF_best=733.25 GF_mean=731.47
+v9     M= 8192 N= 8192 K= 8192  kb=1280 nb= 528  best=1.1403s mean=1.1457s  GF_best=964.22 GF_mean=959.65
+v12    M= 8192 N= 8192 K= 8192  kb=1024 nb= 640  best=1.1210s mean=1.1272s  GF_best=980.83 GF_mean=975.46
+mkl    M=10000 N=10000 K=10000                best=1.8749s mean=1.8753s  GF_best=1066.72 GF_mean=1066.50
+v9     M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.7963s mean=1.8213s  GF_best=1113.40 GF_mean=1098.10
+v12    M=10000 N=10000 K=10000  kb=1024 nb= 640  best=1.9444s mean=1.9745s  GF_best=1028.59 GF_mean=1012.90
+mkl    M=12000 N=12000 K=12000                best=3.0960s mean=3.0964s  GF_best=1116.27 GF_mean=1116.12
+v9     M=12000 N=12000 K=12000  kb=1280 nb= 528  best=3.1160s mean=3.2607s  GF_best=1109.11 GF_mean=1059.91
+v12    M=12000 N=12000 K=12000  kb=1024 nb= 640  best=3.1648s mean=3.3527s  GF_best=1092.01 GF_mean=1030.80
+mkl    M=16384 N=16384 K=16384                best=12.0549s mean=12.0656s  GF_best=729.67 GF_mean=729.02
+v9     M=16384 N=16384 K=16384  kb=1280 nb= 528  best=8.8670s mean=9.0186s  GF_best=992.00 GF_mean=975.33
+v12    M=16384 N=16384 K=16384  kb=1024 nb= 640  best=8.7273s mean=9.2936s  GF_best=1007.88 GF_mean=946.47
+--- pass 2 ---
+mkl    M= 8192 N= 8192 K= 8192                best=1.4920s mean=1.4943s  GF_best=736.96 GF_mean=735.81
+v9     M= 8192 N= 8192 K= 8192  kb=1280 nb= 528  best=1.1401s mean=1.1463s  GF_best=964.36 GF_mean=959.22
+v12    M= 8192 N= 8192 K= 8192  kb=1024 nb= 640  best=1.1195s mean=1.1296s  GF_best=982.12 GF_mean=973.33
+mkl    M=10000 N=10000 K=10000                best=1.8810s mean=1.8815s  GF_best=1063.29 GF_mean=1062.99
+v9     M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.8034s mean=1.8437s  GF_best=1109.02 GF_mean=1084.76
+v12    M=10000 N=10000 K=10000  kb=1024 nb= 640  best=1.9423s mean=1.9672s  GF_best=1029.71 GF_mean=1016.65
+mkl    M=12000 N=12000 K=12000                best=3.1316s mean=3.1321s  GF_best=1103.59 GF_mean=1103.41

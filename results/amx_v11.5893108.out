@@ -1,0 +1,24 @@
+===== v9 stability check: many iterations @ N=10000 =====
+v9     M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.9438s mean=1.9920s  GF_best=1028.91 GF_mean=1004.02
+v9     M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.9387s mean=2.0084s  GF_best=1031.64 GF_mean=995.82
+v9     M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.9365s mean=1.9859s  GF_best=1032.77 GF_mean=1007.10
+===== v11 M-panel inside-nc sweep @ N=10000 =====
+v11    M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.9453s mean=2.0582s  GF_best=1028.14 GF_mean=971.70
+v11    M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.9464s mean=1.9809s  GF_best=1027.54 GF_mean=1009.66
+v11    M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.9454s mean=2.0752s  GF_best=1028.04 GF_mean=963.77
+v11    M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.9421s mean=2.0182s  GF_best=1029.84 GF_mean=990.99
+v11    M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.9454s mean=1.9982s  GF_best=1028.05 GF_mean=1000.89
+v11    M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.9474s mean=2.0316s  GF_best=1027.00 GF_mean=984.44
+===== v11 at all sizes =====
+v11    M= 8192 N= 8192 K= 8192  kb=1280 nb= 528  best=1.1580s mean=1.1891s  GF_best=949.52 GF_mean=924.63
+v11    M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.9416s mean=2.0788s  GF_best=1030.09 GF_mean=962.11
+v11    M=12000 N=12000 K=12000  kb=1280 nb= 528  best=3.3267s mean=3.5302s  GF_best=1038.88 GF_mean=978.98
+v11    M=16384 N=16384 K=16384  kb=1280 nb= 528  best=9.5614s mean=9.7517s  GF_best=919.96 GF_mean=902.01
+===== v9 best with longer iterations to find real best =====
+v9     M=10000 N=10000 K=10000  kb=1024 nb= 528  best=2.0505s mean=2.0821s  GF_best=975.35 GF_mean=960.55
+v9     M=10000 N=10000 K=10000  kb=1280 nb= 432  best=2.0406s mean=2.0798s  GF_best=980.10 GF_mean=961.64
+v9     M=10000 N=10000 K=10000  kb=1280 nb= 480  best=1.9929s mean=2.0392s  GF_best=1003.54 GF_mean=980.77
+v9     M=10000 N=10000 K=10000  kb=1536 nb= 384  best=2.0633s mean=2.1211s  GF_best=969.33 GF_mean=942.89
+===== MKL multi-iter for accurate baseline =====
+mkl    M=10000 N=10000 K=10000                best=1.8238s mean=1.8246s  GF_best=1096.62 GF_mean=1096.14
+mkl    M=10000 N=10000 K=10000                best=2.0063s mean=2.0067s  GF_best=996.86 GF_mean=996.66

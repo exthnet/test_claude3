@@ -1,0 +1,47 @@
+===== v8 (variable K_block) vs v5 =====
+--- N=4096 ---
+mkl    M= 4096 N= 4096 K= 4096                best=0.1546s mean=0.1547s  GF_best=889.23 GF_mean=888.45
+v5     M= 4096 N= 4096 K= 4096  kb=1024 nb= 480  best=0.1657s mean=0.1664s  GF_best=829.65 GF_mean=825.77
+v8     M= 4096 N= 4096 K= 4096  kb=1024 nb= 480  best=0.1693s mean=0.1696s  GF_best=811.94 GF_mean=810.47
+--- N=8192 ---
+mkl    M= 8192 N= 8192 K= 8192                best=1.5051s mean=1.5057s  GF_best=730.50 GF_mean=730.22
+v5     M= 8192 N= 8192 K= 8192  kb=1024 nb= 480  best=1.2133s mean=1.2158s  GF_best=906.23 GF_mean=904.33
+v8     M= 8192 N= 8192 K= 8192  kb=1024 nb= 480  best=1.2372s mean=1.2375s  GF_best=888.71 GF_mean=888.46
+--- N=10000 ---
+mkl    M=10000 N=10000 K=10000                best=1.7979s mean=1.7986s  GF_best=1112.38 GF_mean=1112.00
+v5     M=10000 N=10000 K=10000  kb=1024 nb= 480  best=2.0851s mean=2.1131s  GF_best=959.19 GF_mean=946.46
+v8     M=10000 N=10000 K=10000  kb=1024 nb= 480  best=2.0997s mean=2.1093s  GF_best=952.51 GF_mean=948.20
+--- N=12000 ---
+mkl    M=12000 N=12000 K=12000                best=3.0424s mean=3.0437s  GF_best=1135.95 GF_mean=1135.45
+v5     M=12000 N=12000 K=12000  kb=1024 nb= 480  best=3.2439s mean=3.2703s  GF_best=1065.39 GF_mean=1056.80
+v8     M=12000 N=12000 K=12000  kb=1024 nb= 480  best=3.2424s mean=3.2627s  GF_best=1065.87 GF_mean=1059.25
+--- N=16384 ---
+mkl    M=16384 N=16384 K=16384                best=11.7844s mean=11.7898s  GF_best=746.42 GF_mean=746.08
+v5     M=16384 N=16384 K=16384  kb=1024 nb= 480  best=9.2864s mean=9.3051s  GF_best=947.20 GF_mean=945.30
+v8     M=16384 N=16384 K=16384  kb=1024 nb= 480  best=9.5398s mean=9.5507s  GF_best=922.04 GF_mean=920.99
+===== v8 block sweep @ N=10000 =====
+v8     M=10000 N=10000 K=10000  kb= 768 nb= 384  best=2.2250s mean=2.2275s  GF_best=898.89 GF_mean=897.86
+v8     M=10000 N=10000 K=10000  kb= 768 nb= 432  best=2.2004s mean=2.2094s  GF_best=908.92 GF_mean=905.24
+v8     M=10000 N=10000 K=10000  kb= 768 nb= 480  best=2.1295s mean=2.1379s  GF_best=939.21 GF_mean=935.49
+v8     M=10000 N=10000 K=10000  kb= 768 nb= 528  best=2.0760s mean=2.0893s  GF_best=963.40 GF_mean=957.25
+v8     M=10000 N=10000 K=10000  kb= 768 nb= 576  best=2.1510s mean=2.1596s  GF_best=929.79 GF_mean=926.10
+v8     M=10000 N=10000 K=10000  kb= 768 nb= 624  best=2.1605s mean=2.1899s  GF_best=925.73 GF_mean=913.28
+v8     M=10000 N=10000 K=10000  kb=1024 nb= 384  best=2.1860s mean=2.1935s  GF_best=914.92 GF_mean=911.78
+v8     M=10000 N=10000 K=10000  kb=1024 nb= 432  best=2.1699s mean=2.1800s  GF_best=921.71 GF_mean=917.42
+v8     M=10000 N=10000 K=10000  kb=1024 nb= 480  best=2.1020s mean=2.1140s  GF_best=951.46 GF_mean=946.09
+v8     M=10000 N=10000 K=10000  kb=1024 nb= 528  best=2.0548s mean=2.0671s  GF_best=973.34 GF_mean=967.53
+v8     M=10000 N=10000 K=10000  kb=1024 nb= 576  best=2.1207s mean=2.1418s  GF_best=943.10 GF_mean=933.81
+v8     M=10000 N=10000 K=10000  kb=1024 nb= 624  best=2.1441s mean=2.1589s  GF_best=932.77 GF_mean=926.40
+v8     M=10000 N=10000 K=10000  kb=1280 nb= 384  best=2.0607s mean=2.0812s  GF_best=970.54 GF_mean=961.00
+v8     M=10000 N=10000 K=10000  kb=1280 nb= 432  best=2.0552s mean=2.0703s  GF_best=973.12 GF_mean=966.04
+v8     M=10000 N=10000 K=10000  kb=1280 nb= 480  best=2.0014s mean=2.0470s  GF_best=999.31 GF_mean=977.02
+v8     M=10000 N=10000 K=10000  kb=1280 nb= 528  best=1.9728s mean=2.0130s  GF_best=1013.80 GF_mean=993.53
+v8     M=10000 N=10000 K=10000  kb=1280 nb= 576  best=2.0167s mean=2.0635s  GF_best=991.73 GF_mean=969.22
+v8     M=10000 N=10000 K=10000  kb=1280 nb= 624  best=2.1348s mean=2.2768s  GF_best=936.84 GF_mean=878.42
+v8     M=10000 N=10000 K=10000  kb=1536 nb= 384  best=2.0538s mean=2.0805s  GF_best=973.79 GF_mean=961.32
+v8     M=10000 N=10000 K=10000  kb=1536 nb= 432  best=2.0390s mean=2.0641s  GF_best=980.87 GF_mean=968.95
+v8     M=10000 N=10000 K=10000  kb=1536 nb= 480  best=2.0366s mean=2.1562s  GF_best=982.04 GF_mean=927.55
+v8     M=10000 N=10000 K=10000  kb=1536 nb= 528  best=2.0090s mean=2.1242s  GF_best=995.51 GF_mean=941.54
+v8     M=10000 N=10000 K=10000  kb=1536 nb= 576  best=2.1825s mean=2.5838s  GF_best=916.38 GF_mean=774.04
+v8     M=10000 N=10000 K=10000  kb=1536 nb= 624  best=2.6241s mean=2.6937s  GF_best=762.15 GF_mean=742.47
+DONE
